@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="res_holiday_list">
+      <field name="name">res_holiday_list</field>
+      <field name="model">res.holiday</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="holiday_date"/>
+          <field name="name"/>
+          <field name="year"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="res_holiday_action_window">
+      <field name="name">Dias Feriados</field>
+      <field name="res_model">res.holiday</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- menu categories -->
+    <menuitem name="General" id="api_exchange_rate_general" parent="account.menu_finance_configuration"/>
+
+    <!-- actions -->
+    <menuitem name="Dias Feriados" id="api_exchange_rate_holiday" parent="api_exchange_rate_general"
+              action="res_holiday_action_window"/>
+  </data>
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+    <data noupdate="1">
+        <record id="decimal_precision_exchange_rate" model="decimal.precision">
+            <field name="name">Exchange Rate</field>
+            <field name="digits">4</field>
+        </record>
+    </data>
+</odoo>

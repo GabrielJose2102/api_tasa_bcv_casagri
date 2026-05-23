@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- SIN CAMBIOS FUNCIONALES RELEVANTES PARA ODOO 18 (PENDIENTE VALIDAR XPATH EN LA VISTA REAL) -->
+    <record id="view_res_config_settings_form_inherit" model="ir.ui.view">
+        <field name="name">res.config.settings.inherit.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='main_currency_setting_container']" position="inside">
+                <setting id="api_exchange_rate" string="Gestión del tipo de cambio" help="Método para redondear o truncar el tipo de cambio">
+                    <div class="content-group">
+                        <div class="row mt16">
+                            <label for="exchange_rate_round_method" class="col-lg-3 o_light_label"/>
+                            <field name="exchange_rate_round_method" />
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

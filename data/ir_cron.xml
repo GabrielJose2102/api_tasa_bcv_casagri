@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- <record id="ir_cron_send_invoice_reminders" model="ir.cron">
+            <field name="name">Get Exchange Rate</field>
+            <field name="model_id" ref="model_api_exchange_rate"/>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="state">code</field>
+            <field eval="False" name="doall"/>
+            <field eval="'model._save_exchange_rate()'" name="code"/>
+            <field name="nextcall" eval="(DateTime.now().replace(hour=10, minute=0) + timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')" /> 
+        </record> -->
+    </data>
+</odoo>
