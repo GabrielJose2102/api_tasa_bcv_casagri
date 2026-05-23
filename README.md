@@ -69,4 +69,4 @@ El sistema está preparado para funcionar de forma totalmente automática.
 
 ---
 
-*Desarrollado con ❤️ por Ing Gabriel Torrealba (Software Engineer) para el ecosistema Odoo.*
+*Desarrollado por Ing Gabriel Torrealba (Software Engineer) para el ecosistema Odoo.*
